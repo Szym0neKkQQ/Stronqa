@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    margin: 0;
+    position: fixed;
+}
+.cart_input{
+    float: right;
+    padding-top: 20px;
+    padding-right: 1%;
+    font-family: 'Akshar', sans-serif;
+}
+img{
+    width: 50px;
+    height: 50px;
+    float: right;
+    padding-top: 20px;
+    padding-right: 5%;
+    display: block;
+}
+
+h2{
+    font-family: 'Akshar', sans-serif;
+    text-align: center;
+    float: left;
+    color: black;
+    padding-left: 5%;
+    font-size: 2rem;
+    display: block;
+}
+header{
+    height: 1000px;
+    width: 100%;
+    background-image: url("src/header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    clear: both;
+    color: white;
+}
+
+h1{
+    font-family: 'Akshar', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.top_part{
+    height: 400px;
+    width: 100%;
+}
+
+.offer_1{
+    width: 100%;
+    background-image: url("src/shirt1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offer_1:hover{
+    background-image: url("src/shirt1_zoomed.png");
+}
+
+.offer_2{
+    width: 100%;
+    background-image: url("src/shirt2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offer_2:hover{
+    background-image: url("src/shirt2_zoomed.png");
+}
+
+.offer_3{
+    width: 100%;
+    background-image: url("src/shirt3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offer_3:hover{
+    background-image: url("src/shirt3_zoomed.png");
+}
+
+.offer_4{
+    width: 100%;
+    background-image: url("src/shirt4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offer_4:hover{
+    background-image: url("src/shirt4_zoomed.png");
+}
+
+.bottom_part{
+    height: 100px;
+    background-color: rgb(23, 23, 23);
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-family: 'Akshar', sans-serif;
+    font-size: 2rem;
+}
+
+h3{
+    padding-top: 25px;
+}
+
+
+@media only screen and (min-width: 768px){
+    .offer_1,.offer_2,.offer_3,.offer_4{
+        height: 500px;
+        display: block;
+        width: 35%;
+        background-color: rgb(38, 38, 38);
+        float: left;
+        margin-top: 75px;
+        margin-bottom: 75px;
+        text-align: center;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    .offer_1,.offer_3{
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+    .offer_2,.offer_4{
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+    .offer_content{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .offer_1,.offer_2,.offer_3{
+        height: 500px;
+        display: block;
+        width: 350px;
+        background-color: rgb(38, 38, 38);
+        float: left;
+        margin: 75px;
+        text-align: center;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    .offer_content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .offer_4{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 2000px){
+    .offer_1,.offer_2,.offer_3,.offer_4{
+        height: 500px;
+        display: block;
+        width: 15%;
+        background-color: rgb(38, 38, 38);
+        float: left;
+        margin: 75px;
+        text-align: center;
+        justify-self: center;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    .offer_content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+article{
+    color:white;
+    
+}
+
+.drop_offer{
+    display: flex;
+    justify-self: center;
+    background-color: rgb(23, 23, 23);
+    height: 450px;
+    width: 80%;
+    margin: auto;
+    border-bottom-left-radius: 25px;
+    margin-bottom: 75px;
+}
+.drop_img{
+    background-image: url("src/drop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 40%;
+    margin-right: 5%; 
+    border-bottom-left-radius: 25px;
+}
+
+.drop_img:hover{
+    background-image: url("src/drop_zoomed.png");
+}
+.drop_describe{
+    width: 60%;
+    font-family: 'Akshar', sans-serif;
+    margin-right: 5%;
+    height: 300px;
+}
+.drop_prise{
+    width: 60%;
+    margin-right: 5%;
+    height: 125px ;
+}
+.description{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    padding-bottom: 25px; 
+}
+@media only screen and (min-width: 2000px){
+    .drop_describe{
+        font-size: 40px;
+    }
+    .drop_prise{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .drop_describe{
+        font-size: 1.5rem;
+    }
+    .drop_prise{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .drop_describe{
+        font-size: 22px;
+    }
+    .drop_prise{
+        font-size: 2rem;
+    }
+}
+
+.help_article{
+    background-image: url("src/helpimg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    margin-bottom: 50px;
+    padding-top: 100px;
+}
+
+.inner_help_article{
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 45%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.5);
+    font-family: 'Akshar', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media only screen and (max-width: 1200px){
+    .inner_help_article{
+        font-size: 1.7rem;
+    }
+}
+
+footer{
+    height: 100px;
+    width: 80%;
+    margin-left: 10%;
+    margin-left: 10%;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: white;
+    color: white;
+    font-family: 'Akshar', sans-serif;
+    font-size: 1.5rem;
+}
